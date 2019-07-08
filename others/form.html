@@ -1,0 +1,52 @@
+<!Doctype <!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>register on kayks</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="form.css">
+  </head>
+  <body>
+    <!--[if lt IE 7]>
+      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+
+    <div id='formContainer'>
+      <form>
+        <p>Please enter your full name</p>
+        <input type='text' name='name' placeholder='full name, surname first' pattern='[a-zA-Z ]{10, }' required autofocus/>
+        <div class="validation-messages invalid description">
+          <span data-rule="valueMissing" class="hide">The username is required.</span>
+          <span data-rule="patternMissmatch" class="hide">Must be a series of alpha characters only (min 5, max 30).</span>
+        </div>
+
+        <div id='emailcontainer'>
+          <input type='email' id='email' placeholder='email'  required/>
+          <div class="validation-messages invalid description">
+              <span data-rule="valueMissing" class="hide">The email address is required.</span>
+              <span data-rule="patternMissmatch" class="hide">The required email address may not include any special characters other than the '.' or '@'.</span>
+          </div>
+        </div>
+
+        <div id='ageContainer'>
+          <input type='date' id='age' placeholder='date of birth' required/>
+          <div class='invalid description'>
+            Enter your date of birth
+        </div>
+
+        </div>
+        <div id='submitContainer'>
+          <input type='submit' placeholder='submit'/>
+        </div>
+      </form>
+    </div>
+
+
+    <script src="" async defer></script>
+  </body>
+</html>
